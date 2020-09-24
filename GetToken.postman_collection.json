@@ -1,0 +1,261 @@
+{
+	"info": {
+		"_postman_id": "fce31483-3115-4a64-ba24-17aff712ca0d",
+		"name": "GetToken",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetToken",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "401b09eab3c013d4ca54922bb802bec8fd5318192b0a75f201d8b3727429090fb337591abd3e44453b954555b7a0812e1081c39b740293f765eae731f5a65ed1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"username\": \"hihi@test.com\",\r\n    \"password\": \"P@ssw0rd\",\r\n    \"grant_type\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44300/api/Token/Auth",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44300",
+					"path": [
+						"api",
+						"Token",
+						"Auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetOrder",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "32036a08-a9ca-4d3a-8019-e6a3016f8476",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyYzhiYWU3Ny1mNDY4LTQxMTEtODI2Ni1iZDFiNTZiNDg5NzEiLCJqdGkiOiJjODg3NTI2Mi1mYTcyLTQ0ZGEtOTJjMi04ZjFhZGVjMTVlNWIiLCJpYXQiOiIxNTk5Nzg5Nzk3IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiTWVtYmVyIiwibmJmIjoxNTk5Nzg5Nzk3LCJleHAiOjE2MDQ5NzM3OTcsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjUzMzI0LyIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjUzMzI0LyJ9.Rh8e6yCe1lwe91OFAYbwwUDYnzcSAWSwSygH3sawNO8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44300/api/Orders",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44300",
+					"path": [
+						"api",
+						"Orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteOrder",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "adc0685b-e794-47e2-b1cb-3567c77b0c40",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyYzhiYWU3Ny1mNDY4LTQxMTEtODI2Ni1iZDFiNTZiNDg5NzEiLCJqdGkiOiJjODg3NTI2Mi1mYTcyLTQ0ZGEtOTJjMi04ZjFhZGVjMTVlNWIiLCJpYXQiOiIxNTk5Nzg5Nzk3IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiTWVtYmVyIiwibmJmIjoxNTk5Nzg5Nzk3LCJleHAiOjE2MDQ5NzM3OTcsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjUzMzI0LyIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjUzMzI0LyJ9.Rh8e6yCe1lwe91OFAYbwwUDYnzcSAWSwSygH3sawNO8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44300/api/Orders",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44300",
+					"path": [
+						"api",
+						"Orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateOrder",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "11484f64-6243-4d72-8b1e-acde8adc8fce",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyYzhiYWU3Ny1mNDY4LTQxMTEtODI2Ni1iZDFiNTZiNDg5NzEiLCJqdGkiOiJjODg3NTI2Mi1mYTcyLTQ0ZGEtOTJjMi04ZjFhZGVjMTVlNWIiLCJpYXQiOiIxNTk5Nzg5Nzk3IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiTWVtYmVyIiwibmJmIjoxNTk5Nzg5Nzk3LCJleHAiOjE2MDQ5NzM3OTcsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjUzMzI0LyIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjUzMzI0LyJ9.Rh8e6yCe1lwe91OFAYbwwUDYnzcSAWSwSygH3sawNO8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"foodDescription\": \"fish\",\r\n    \"deliveryAddress\": \"Lorang Choon, 78008\",\r\n    \"deliveryDT\": \"2008-10-01 T13:23:44\",\r\n    \"quantity\": 3,\r\n    \"orderBy\": \"Joon\",\r\n    \"orderDate\": \"2010-10-01T00:00:00\",\r\n    \"customerId\": \"667788\",\r\n    \"customer\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44300/api/Orders",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44300",
+					"path": [
+						"api",
+						"Orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EditOrder",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "dae5559a-7ff9-496c-880a-4acfe2a6c047",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyYzhiYWU3Ny1mNDY4LTQxMTEtODI2Ni1iZDFiNTZiNDg5NzEiLCJqdGkiOiJjODg3NTI2Mi1mYTcyLTQ0ZGEtOTJjMi04ZjFhZGVjMTVlNWIiLCJpYXQiOiIxNTk5Nzg5Nzk3IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiTWVtYmVyIiwibmJmIjoxNTk5Nzg5Nzk3LCJleHAiOjE2MDQ5NzM3OTcsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjUzMzI0LyIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjUzMzI0LyJ9.Rh8e6yCe1lwe91OFAYbwwUDYnzcSAWSwSygH3sawNO8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"orderId\": 7,\r\n        \"foodDescription\": \"sardine\",\r\n        \"deliveryAddress\": \"Lorang Choon, 78008\",\r\n        \"deliveryDT\": \"2008-10-01T13:23:44\",\r\n        \"quantity\": 3,\r\n        \"orderBy\": \"Joon\",\r\n        \"orderDate\": \"2010-10-01T00:00:00\",\r\n        \"customerId\": \"667788\",\r\n        \"customer\": null\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44300/api/Orders/7",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44300",
+					"path": [
+						"api",
+						"Orders",
+						"7"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
